@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Container */
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* small */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* small */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*End Container */
+
+/* Start Header */
+.header {
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a .logo {
+    width: 50px;
+}
+
+.header .links {
+    position: relative;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 3px;
+    cursor: pointer;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 50%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+.header .links ul {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: none;
+    font-weight: 600;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+
+.header .links ul::before {
+    content: "";
+    position: absolute;
+    top: -19px;
+    right: 5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #eee;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.header .links ul li a:hover {
+    padding-left: 25px;
+    background-color: #eee;
+    color: #333;
+}
+
+.header .links ul li:not(:last-child) {
+    border-bottom: 3px solid #eee;
+}
+
+/* End Header */
+
+/* Start Main */
+
+.main {
+    background-color: aquamarine;
+}
+
+.main .main-head h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.main .main-head h1 span {
+    font-size: 60px;
+    font-weight: 900;
+    color: #000;
+
+}
+
+.main .main-head span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.main .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.main .container .personal-img {
+    width: 500px;
+    clip-path: circle(30%);
+}
+
+/* End Main */
+
+/* Start About */
+.about {
+    padding: 10px;
+}
+
+.about .container,
+.skills .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container h1,
+.skills .container h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.about .container hr,
+.skills .container hr {
+    width: 30%;
+    border: 3px solid #333;
+}
+
+.about .main-p .p-about {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.about .container .social ul,
+.skills .container .skills-ul ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .container .social ul li,
+.skills .container .skills-ul ul li {
+    padding-left: 50px;
+}
+
+.about .container .social ul li a img,
+.skills .container .skills-ul ul li a img {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* End About */
+
+.skills {
+    background-color: aquamarine;
+    transform-origin: top right;
+    transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+    -o-transform: skewY(-4deg);
+    margin-bottom: 50px;
+    padding: 0 0 60px 0;
+}
+
+.skills .container .skills-ul ul li a img,
+.skills .container hr,
+.skills .container h1 {
+    transform-origin: top right;
+    transform: skewY(4deg);
+
+}
+
+.skills .container .skills-ul {
+    width: 70%;
+}
+
+.skills span {
+    width: 100%;
+    height: 120px;
+    background-color: aquamarine;
+    bottom: -61px;
+    position: absolute;
+    transform: skewY(4deg);
+    -webkit-transform: skewY(4deg);
+    -moz-transform: skewY(4deg);
+    -ms-transform: skewY(4deg);
+    -o-transform: skewY(4deg);
+}
+
+/* Start Footer */
+.footer {
+    padding-top: 100px;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .container .footer-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .container .footer-div .copy {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 3px auto;
+}
+
+.footer .container .footer-div .red {
+    color: crimson;
+}
+
+.footer .container .footer-div .red:hover {
+    color: rgb(98, 9, 27);
+}
+
+/* End Footer */

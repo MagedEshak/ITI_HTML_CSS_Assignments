@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Smooch+Sans:wght@100..900&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Smooch Sans", sans-serif;
+}
+
+/* Container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* small */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* small */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*End Container */
+
+/* Start Header */
+.header {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.header .container .div-ul-Selectors {
+    background-color: bisque;
+    width: 100%;
+    border: 4px solid;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+
+}
+
+.header .container .ul-Selectors {
+    list-style: none;
+    display: flex;
+}
+
+.header .container .ul-Selectors .li-selctor {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: coral;
+    border: 4px solid;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header .container .ul-Selectors .li-selctor:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+/* End Header */
+
+/* Star Main */
+.main-content {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    width: 90%;
+    border: 4px solid;
+}
+
+/* Star Left */
+.main-content .container .aside-left {
+    background-color: bisque;
+    width: 30%;
+    padding: 20px;
+    border-right: 4px solid;
+}
+
+.main-content .container .aside-left .form {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    border: 4px solid;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.main-content .container .aside-left .form .social-head {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.main-content .container .aside-left .form .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 3px auto;
+}
+
+.main-content .container .aside-left .form .lable-form {
+    padding-bottom: 3px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main-content .container .aside-left .form .input-form {
+    padding: 5px;
+    border: 3px solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.main-content .container .aside-left .form .submit {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: chocolate;
+    color: bisque;
+    font-weight: 800;
+}
+
+.main-content .container .aside-left .form .submit:hover {
+    cursor: pointer;
+    background-color: bisque;
+    color: chocolate;
+}
+
+.main-content .container .aside-left .social {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px solid;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.main-content .container .aside-left .social .social-head {
+    text-align: center;
+}
+
+.main-content .container .aside-left .social-logos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-content .container .aside-left .social-logos img {
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.main-content .container .aside-left .iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px solid;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.main-content .container .aside-left .iframe iframe {
+    width: 100%;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+/* End Left */
+
+/* Start Medium */
+.main-content .container .section-main {
+    background-color: floralwhite;
+    width: 40%;
+    border-right: 4px solid;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-content .container .section-main .main-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.main-content .container .section-main .ul-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.main-content .container .section-main .ul-main .li-main {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(143, 40, 40);
+    font-size: 25px;
+}
+
+.main-content .container .section-main .ul-main .li-main .details {
+    color: #000;
+}
+
+.main-content .container .section-main .ul-main .li-main a .details {
+    color: chocolate;
+}
+
+.main-content .container .section-main .ul-main .li-main a:hover .details {
+    color: blue;
+}
+
+/* End Medium */
+
+/* Start Right */
+.main-content .container .aside-right {
+    background-color: darkgrey;
+    width: 30%;
+    padding: 15px;
+}
+
+.main-content .container .aside-right .social .img-personal {
+    border: 4px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.main-content .container .aside-right .social .img-personal img {
+    width: 100%;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+
+.main-content .container .aside-right .social hr {
+    margin: 50px auto;
+}
+
+.main-content .container .aside-right .social .News {
+    border: 4px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-content .container .aside-right .social .News .news-title {
+    text-align: center;
+    border-bottom: 4px solid;
+    padding-bottom: 3px;
+}
+
+.main-content .container .aside-right .social .News .news-titles {
+    text-align: center;
+    border: 4px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.main-content .container .aside-right .social .News .news-p {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-indent: 10px;
+}
+
+.main-content .container .aside-right .social .News .news-p::first-letter {
+    font-size: 30px;
+    color: #fff;
+}
+
+
+/* End Right */
+
+/* End Main */
+
+/* Start Footer */
+.footer {
+    padding-top: 20px;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .container .footer-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .container .footer-div .copy {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 3px auto;
+}
+
+.footer .container .footer-div .red {
+    color: crimson;
+}
+
+/* End Footer */

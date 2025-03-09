@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+
+        <form action="./thank.html">
+            <fieldset style=" display: flex;flex-direction: column;align-content: flex-start;justify-content: center; align-items: flex-start;
+                                    ">
+                <legend>Login</legend>
+                First Name:<input type="text" name="FName" placeholder="Please, Enter Your First Name"
+                    style="margin: 5px;" required>
+                Last Name:<input type="text" name="LName" placeholder="Please, Enter Your Last Name"
+                    style="margin: 5px;" required>
+
+                Password:<input type="password" name="Password" placeholder="Password" style="margin: 5px;" required>
+                Confirm Password:<input type="password" name="Password" placeholder="Password" style="margin: 5px;"
+                    required>
+
+                Email:<input type="email" name="email" placeholder="Email" style="margin: 5px;">
+
+                BirthDate:<input type="date" name="date" placeholder="BirthDate" style="margin: 5px;">
+                <input type="image" src="../../imgs/IMG-20250225-WA0001.jpg" width="20%" alt="">
+
+                Gender:<input type="radio" id="m" name="m" style="margin: 5px;">
+                <label for="m">Male</label>
+                <input type="radio" id="m" name="m" style="margin: 5px;">
+                <label for="m">FeMale</label>
+
+                <select>
+                    <option selected disabled hidden>Faculty</option>
+                    <option value="">EElu</option>
+                    <option value="">Minya</option>
+                </select>
+                <fieldset>
+                    <legend>Hobies</legend>
+                    <input type="checkbox" name="Hobies">
+                    <label for="">programming</label>
+                    <input type="checkbox" name="Hobies">
+                    <label for="">Football</label>
+                    <input type="checkbox" name="Hobies">
+                    <label for="">Swimming</label>
+
+                </fieldset>
+                <label for="">About Me</label>
+                <textarea name="" id=""></textarea>
+
+                <input type="checkbox" name="Hobies">
+                <label for="">• I agreed to <a href="#">terms</a> </label>
+
+
+                <input type="submit" name="submit" value="LogIn" style="margin: 5px;">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
